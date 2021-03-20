@@ -1,0 +1,10 @@
+ADMIN LOGIN:
+
+admin
+admin
+
+
+USER LOGIN:
+
+test@gmail.com
+Test@12345
