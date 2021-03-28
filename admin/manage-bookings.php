@@ -48,9 +48,8 @@ $msg="Booking Successfully Confirmed";
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
-	
+    <link rel="shortcut icon" href="assets/logo/logo_title.png">
 	<title>Car Rental Portal |Admin Manage testimonials   </title>
-
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<!-- Sandstone Bootstrap CSS -->
@@ -65,7 +64,7 @@ $msg="Booking Successfully Confirmed";
 	<link rel="stylesheet" href="css/fileinput.min.css">
 	<!-- Awesome Bootstrap checkbox -->
 	<link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css">
-	<!-- Admin Stye -->
+	<!-- Admin Style -->
 	<link rel="stylesheet" href="css/style.css">
   <style>
 		.errorWrap {

@@ -28,6 +28,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
             <title>Dream Explorer | Admin Login</title>
+        <link rel="shortcut icon" href="assets/logo/logo_title.png">
             <link rel="shortcut icon" href="assets/logo/logo_title.png">
             <link rel="stylesheet" href="css/font-awesome.min.css">
             <link rel="stylesheet" href="css/bootstrap.min.css">

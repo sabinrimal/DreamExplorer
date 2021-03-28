@@ -13,7 +13,7 @@ error_reporting(0);
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <title>Car Rental Portal</title>
+    <title>Dream Explorer</title>
     <link rel="shortcut icon" href="assets/logo/logo_title.png">
     <!--Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
@@ -53,7 +53,7 @@ error_reporting(0);
 </section>
 <!-- /Banners --> 
 
-<!-- Resent Cars-->
+<!-- Recent Cars-->
 <section class="section-padding gray-bg">
   <div class="container">
     <div class="section-header text-center">
@@ -184,7 +184,7 @@ error_reporting(0);
                 foreach($results as $result) {
         ?>
         <div class="testimonial-m">
-          <div class="testimonial-img"> <img src="assets/images/cat-profile.png" alt="" /> </div>
+          <div class="testimonial-img"> <img src="assets/logo/logo_title.png" alt="" /> </div>
           <div class="testimonial-content">
             <div class="testimonial-heading">
               <h5><?php echo htmlentities($result->FullName);?></h5>
@@ -197,7 +197,7 @@ error_reporting(0);
     </div>
   </div>
   <!-- Dark Overlay-->
-  <div class="dark-overlay"></div>
+  <div class="white-overlay"></div>
 </section>
 <!-- /Testimonial-->
 
@@ -206,7 +206,6 @@ error_reporting(0);
 <!-- /Footer-->
 
 <!--Back to top-->
-
 <div id="back-top" class="back-top"> <a href="#top"><i class="fa fa-angle-up" aria-hidden="true"></i> </a> </div>
 <!--/Back to top-->
 

@@ -12,7 +12,7 @@ error_reporting(0);
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta name="keywords" content="">
         <meta name="description" content="">
-        <title>Car Rental Portal | Car Listing</title>
+        <title>DreamExplorer | Car Listing</title>
         <link rel="shortcut icon" href="assets/logo/logo_title.png">
         <!--Bootstrap -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
@@ -110,26 +110,23 @@ error_reporting(0);
           <div class="sidebar_filter">
             <form action="search-carresult.php" method="post">
               <div class="form-group select">
-                <select class="form-control" name="brand">
+                <select class="form-control" name="brand" required="required">
                   <option>Select Brand</option>
-
                   <?php
                     $sql = "SELECT * from  tblbrands ";
                     $query = $dbh -> prepare($sql);
                     $query->execute();
                     $results=$query->fetchAll(PDO::FETCH_OBJ);
                     $cnt=1;
-                    if($query->rowCount() > 0)
-                    {
-                    foreach($results as $result)
-                    {
+                    if($query->rowCount() > 0) {
+                        foreach($results as $result) {
                   ?>
                     <option value="<?php echo htmlentities($result->id);?>"><?php echo htmlentities($result->BrandName);?></option>
                   <?php }} ?>
                 </select>
               </div>
               <div class="form-group select">
-                <select class="form-control" name="fueltype">
+                <select class="form-control" name="fueltype" required="required">
                     <option>Select Fuel Type</option>
                     <option value="Petrol">Petrol</option>
                     <option value="Diesel">Diesel</option>
@@ -137,7 +134,9 @@ error_reporting(0);
                 </select>
               </div>
               <div class="form-group">
-                <button type="submit" class="btn btn-block"><i class="fa fa-search" aria-hidden="true"></i> Search Car</button>
+                <button type="submit" class="btn btn-block">
+                    <i class="fa fa-search" aria-hidden="true"></i> Search Car
+                </button>
               </div>
             </form>
           </div>
@@ -160,9 +159,14 @@ error_reporting(0);
                 {
             ?>
               <li class="gray-bg">
-                <div class="recent_post_img"> <a href="vehical-details.php?vhid=<?php echo htmlentities($result->id);?>"><img src="admin/img/vehicleimages/<?php echo htmlentities($result->Vimage1);?>" alt="image"></a> </div>
-                <div class="recent_post_title"> <a href="vehical-details.php?vhid=<?php echo htmlentities($result->id);?>"><?php echo htmlentities($result->BrandName);?> , <?php echo htmlentities($result->VehiclesTitle);?></a>
-                  <p class="widget_price">$<?php echo htmlentities($result->PricePerDay);?> Per Day</p>
+                <div class="recent_post_img">
+                    <a href="vehical-details.php?vhid=<?php echo htmlentities($result->id);?>">
+                        <img src="admin/img/vehicleimages/<?php echo htmlentities($result->Vimage1);?>" alt="image">
+                    </a>
+                </div>
+                <div class="recent_post_title">
+                    <a href="vehical-details.php?vhid=<?php echo htmlentities($result->id);?>"><?php echo htmlentities($result->BrandName);?> , <?php echo htmlentities($result->VehiclesTitle);?></a>
+                    <p class="widget_price">$<?php echo htmlentities($result->PricePerDay);?> Per Day</p>
                 </div>
               </li>
             <?php }} ?>

@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 28, 2021 at 11:05 AM
--- Server version: 10.4.18-MariaDB
--- PHP Version: 7.4.16
+-- Generation Time: Mar 07, 2021 at 06:00 AM
+-- Server version: 10.4.17-MariaDB
+-- PHP Version: 8.0.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -63,8 +63,7 @@ CREATE TABLE `tblbooking` (
 --
 
 INSERT INTO `tblbooking` (`id`, `userEmail`, `VehicleId`, `FromDate`, `ToDate`, `message`, `Status`, `PostingDate`) VALUES
-(7, 'test@gmail.com', 1, '21/03/2021', '22/03/2021', 'abc', 2, '2021-03-21 03:03:10'),
-(8, 'test@gmail.com', 1, '22/03/2021', '23/03/2021', 'abc', 1, '2021-03-22 06:36:52');
+(1, 'test@gmail.com', 7, '06/03/2021', '10/03/2021', 'Are there any other car options.', 0, '2021-03-06 13:48:21');
 
 -- --------------------------------------------------------
 
@@ -84,8 +83,7 @@ CREATE TABLE `tblbrands` (
 --
 
 INSERT INTO `tblbrands` (`id`, `BrandName`, `CreationDate`, `UpdationDate`) VALUES
-(1, 'Suzuki', '2021-03-06 13:39:36', '2021-03-06 13:39:55'),
-(10, 'Hyundai', '2021-03-25 01:58:38', NULL);
+(1, 'Suzuki', '2021-03-06 13:39:36', '2021-03-06 13:39:55');
 
 -- --------------------------------------------------------
 
@@ -105,7 +103,7 @@ CREATE TABLE `tblcontactusinfo` (
 --
 
 INSERT INTO `tblcontactusinfo` (`id`, `Address`, `EmailId`, `ContactNo`) VALUES
-(1, 'Mitrapark, Chabahil, Kathmandu, Nepal																									', 'contact@dreamexplorer.com.np', '+9779804975');
+(1, 'Test Demo test demo																									', 'test@test.com', '8585233222');
 
 -- --------------------------------------------------------
 
@@ -158,13 +156,6 @@ CREATE TABLE `tblsubscribers` (
   `PostingDate` timestamp NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `tblsubscribers`
---
-
-INSERT INTO `tblsubscribers` (`id`, `SubscriberEmail`, `PostingDate`) VALUES
-(2, 'sabinrimalwork@gmail.com', '2021-03-25 02:02:46');
-
 -- --------------------------------------------------------
 
 --
@@ -179,15 +170,6 @@ CREATE TABLE `tbltestimonial` (
   `status` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `tbltestimonial`
---
-
-INSERT INTO `tbltestimonial` (`id`, `UserEmail`, `Testimonial`, `PostingDate`, `status`) VALUES
-(4, 'test@gmail.com', 'Very satisfying services. \r\nI would definitely recommend DreamExplorer.', '2021-03-25 01:15:35', NULL),
-(5, 'test@gmail.com', 'Loved the service, I will definitely take their service more.', '2021-03-25 01:25:05', 1),
-(6, 'sabinrimalwork@gmail.com', 'Very Satisfying Service, \r\nThanks for the service.', '2021-03-25 02:02:10', 1);
-
 -- --------------------------------------------------------
 
 --
@@ -200,8 +182,6 @@ CREATE TABLE `tblusers` (
   `EmailId` varchar(100) DEFAULT NULL,
   `Password` varchar(100) DEFAULT NULL,
   `ContactNo` char(11) DEFAULT NULL,
-  `Citizenship` char(15) DEFAULT NULL,
-  `License` char(15) DEFAULT NULL,
   `dob` varchar(100) DEFAULT NULL,
   `Address` varchar(255) DEFAULT NULL,
   `City` varchar(100) DEFAULT NULL,
@@ -214,9 +194,8 @@ CREATE TABLE `tblusers` (
 -- Dumping data for table `tblusers`
 --
 
-INSERT INTO `tblusers` (`id`, `FullName`, `EmailId`, `Password`, `ContactNo`, `Citizenship`, `License`, `dob`, `Address`, `City`, `Country`, `RegDate`, `UpdationDate`) VALUES
-(1, 'User Test', 'test@gmail.com', '5c428d8875d2948607f3e3fe134d71b4', '9804975875', '0', '0', '17/11/2000', 'Mitrapark', 'Kathmandu', 'Nepal', '2021-03-06 01:32:00', '2021-03-06 13:35:14'),
-(7, 'Sabin Rimal', 'sabinrimalwork@gmail.com', '35b43fb207839298114df0a9224254f0', '9804975875', '04-02-73-00000', '04-06-00000000', NULL, NULL, NULL, NULL, '2021-03-17 03:06:06', NULL);
+INSERT INTO `tblusers` (`id`, `FullName`, `EmailId`, `Password`, `ContactNo`, `dob`, `Address`, `City`, `Country`, `RegDate`, `UpdationDate`) VALUES
+(1, 'User Test', 'test@gmail.com', '5c428d8875d2948607f3e3fe134d71b4', '9804975875', '17/11/2000', 'Mitrapark', 'Kathmandu', 'Nepal', '2021-03-06 01:32:00', '2021-03-06 13:35:14');
 
 -- --------------------------------------------------------
 
@@ -259,8 +238,7 @@ CREATE TABLE `tblvehicles` (
 --
 
 INSERT INTO `tblvehicles` (`id`, `VehiclesTitle`, `VehiclesBrand`, `VehiclesOverview`, `PricePerDay`, `FuelType`, `ModelYear`, `SeatingCapacity`, `Vimage1`, `Vimage2`, `Vimage3`, `Vimage4`, `Vimage5`, `AirConditioner`, `PowerDoorLocks`, `AntiLockBrakingSystem`, `BrakeAssist`, `PowerSteering`, `DriverAirbag`, `PassengerAirbag`, `PowerWindows`, `CDPlayer`, `CentralLocking`, `CrashSensor`, `LeatherSeats`, `RegDate`, `UpdationDate`) VALUES
-(1, 'Swift', 1, 'SWIFT ZXI Full Option', 50, 'Petrol', 2019, 5, 'rent-car.jpg', 'rent-car.jpg', 'rent-car.jpg', 'rent-car.jpg', 'rent-car.jpg', 1, 1, 1, NULL, 1, 1, 1, 1, 1, NULL, NULL, NULL, '2021-03-06 13:43:58', '2021-03-25 01:39:55'),
-(8, 'i10Neo', 10, 'i10Neo Full Option Model', 50, 'Petrol', 2020, 5, 'rent-car.jpg', 'rent-car.jpg', 'rent-car.jpg', 'rent-car.jpg', 'rent-car.jpg', 1, 1, 1, 1, 1, 1, 1, 1, NULL, NULL, NULL, NULL, '2021-03-25 02:00:16', NULL);
+(1, 'Swift', 1, 'SWIFT ZXI Full Option', 50, 'Petrol', 2019, 5, 'OIP (1).jpg', 'download.jpg', 'OIP.jpg', 'OIP (2).jpg', 'businesscard_sabin.svg', 1, 1, 1, NULL, 1, 1, 1, 1, 1, NULL, NULL, NULL, '2021-03-06 13:43:58', NULL);
 
 --
 -- Indexes for dumped tables
@@ -340,13 +318,13 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `tblbooking`
 --
 ALTER TABLE `tblbooking`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `tblbrands`
 --
 ALTER TABLE `tblbrands`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `tblcontactusinfo`
@@ -370,25 +348,25 @@ ALTER TABLE `tblpages`
 -- AUTO_INCREMENT for table `tblsubscribers`
 --
 ALTER TABLE `tblsubscribers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `tbltestimonial`
 --
 ALTER TABLE `tbltestimonial`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `tblusers`
 --
 ALTER TABLE `tblusers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `tblvehicles`
 --
 ALTER TABLE `tblvehicles`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

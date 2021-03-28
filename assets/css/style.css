@@ -449,7 +449,15 @@ blockquote,
   top: 0;
   width: 100%;
 }
-
+.white-overlay{
+    background: #eeeeee none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
 
 /*-------------------------------------
 	1.4. Space margins and padding
@@ -1064,7 +1072,7 @@ nav.navbar {
 	3.1. Banner
 -------------------------------*/
 .banner-section {
-  background-image: url("../images/banner-image.jpg");
+  background-image: url("../logo/logo.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1085,13 +1093,13 @@ nav.navbar {
   padding-left: 120px;
 }
 .banner_content h1 {
-  color: #ffffff;
+  color: #000000;
   font-size: 40px;
   line-height: 50px;
   text-transform: uppercase;
 }
 .banner_content p {
-  color: #ffffff;
+  color: #000000;
   font-size: 20px;
   font-weight: 400;
   line-height: 29px;
@@ -1565,7 +1573,7 @@ nav.navbar {
   background-image: url("../images/testimonial-bg.jpg");
 }
 .white-text h2 {
-  color: #ffffff;
+  color: #000000;
 }
 .testimonial-m {
   padding-left: 20px;
@@ -2259,7 +2267,7 @@ form .slider.slider-horizontal {
 ==============================================*/
 
 .page-header {
-  background-image: url("../images/listing-page-header-img.jpg");
+  background-image: url(../images/banner-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border: 0 none;
@@ -2876,7 +2884,7 @@ table.info-tabel tr td {
 	10. Contact-Us-Page
 ================================*/
 .contactus_page {
-	background-image:url(../images/contact-page-header-img.jpg);	
+	background-image:url(../images/banner-image.jpg);
 }
 .contact_form {
 	padding:28px;
@@ -2961,7 +2969,7 @@ table.info-tabel tr td {
 	12. About-Us-Page
 ================================*/
 .aboutus_page {
-	background-image:url(../images/aboutus-page-header-img.jpg);
+	background-image:url(../images/banner-image.jpg);
 }
 .about_img {
   background: #000 none repeat scroll 0 0;
@@ -3627,7 +3635,7 @@ table.info-tabel tr td {
 	16. Profile-page
 ================================*/
 .profile_page {
-	background-image:url(../images/profile-page-header-img.jpg);
+	background-image:url(../images/banner-image.jpg);
 }
 .inner_pages {
 	padding:80px 0;
@@ -4517,6 +4525,7 @@ h3 {
 .modal-dialog {
   margin: 20px auto;
   width: 90%;
+    height: 90%;
 }
 .mid_divider {
 	display:none;

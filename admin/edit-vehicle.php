@@ -72,9 +72,8 @@ $msg="Data updated successfully";
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
-	
-	<title>Car Rental Portal | Admin Edit Vehicle Info</title>
-
+    <link rel="shortcut icon" href="assets/logo/logo_title.png">
+	<title>DreamExplorerAdmin | Edit Vehicle Info</title>
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<!-- Sandstone Bootstrap CSS -->
@@ -89,26 +88,26 @@ $msg="Data updated successfully";
 	<link rel="stylesheet" href="css/fileinput.min.css">
 	<!-- Awesome Bootstrap checkbox -->
 	<link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css">
-	<!-- Admin Stye -->
+	<!-- Admin Style -->
 	<link rel="stylesheet" href="css/style.css">
 	<style>
 		.errorWrap {
-    padding: 10px;
-    margin: 0 0 20px 0;
-    background: #fff;
-    border-left: 4px solid #dd3d36;
-    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
-    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
-}
-.succWrap{
-    padding: 10px;
-    margin: 0 0 20px 0;
-    background: #fff;
-    border-left: 4px solid #5cb85c;
-    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
-    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
-}
-		</style>
+            padding: 10px;
+            margin: 0 0 20px 0;
+            background: #fff;
+            border-left: 4px solid #dd3d36;
+            -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+            box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+        }
+        .succWrap{
+            padding: 10px;
+            margin: 0 0 20px 0;
+            background: #fff;
+            border-left: 4px solid #5cb85c;
+            -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+            box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+        }
+    </style>
 </head>
 
 <body>
@@ -117,12 +116,9 @@ $msg="Data updated successfully";
 	<?php include('includes/leftbar.php');?>
 		<div class="content-wrapper">
 			<div class="container-fluid">
-
 				<div class="row">
 					<div class="col-md-12">
-					
 						<h2 class="page-title">Edit Vehicle</h2>
-
 						<div class="row">
 							<div class="col-md-12">
 								<div class="panel panel-default">

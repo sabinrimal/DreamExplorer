@@ -57,14 +57,20 @@
       <div class="modal-body">
         <div class="row">
           <div class="signup_wrap">
-            <div class="col-md-12 col-sm-6">
+            <div class="col-md-12 col-sm-12">
               <form  method="post" name="signup" onSubmit="return valid();">
                 <div class="form-group">
                   <input type="text" class="form-control" name="fullname" placeholder="Full Name" required="required">
                 </div>
-                      <div class="form-group">
+                <div class="form-group">
                   <input type="text" class="form-control" name="mobileno" placeholder="Mobile Number" maxlength="10" required="required">
                 </div>
+                  <div class="form-group">
+                      <input type="text" class="form-control" name="citizenshipno" placeholder="Citizenship ID Number" maxlength="15" required="required">
+                  </div>
+                  <div class="form-group">
+                      <input type="text" class="form-control" name="licenseno" placeholder="Driving License Number" maxlength="15" required="required">
+                  </div>
                 <div class="form-group">
                   <input type="email" class="form-control" name="emailid" id="emailid" onBlur="checkAvailability()" placeholder="Email Address" required="required">
                    <span id="user-availability-status" style="font-size:12px;"></span> 
@@ -72,13 +78,16 @@
                 <div class="form-group">
                   <input type="password" class="form-control" name="password" placeholder="Password" required="required">
                 </div>
-                <div class="form-group">
-                  <input type="password" class="form-control" name="confirmpassword" placeholder="Confirm Password" required="required">
-                </div>
+                  <div class="form-group">
+                      <input type="password" class="form-control" name="confirmpassword" placeholder="Confirm Password" required="required">
+                  </div>
                 <div class="form-group checkbox">
                   <input type="checkbox" id="terms_agree" required="required" checked="">
                   <label for="terms_agree">I Agree with <a href="#">Terms and Conditions</a></label>
                 </div>
+                  <div class="form-group text-center">
+                      <p>Already got an account? <a href="#loginform" data-toggle="modal" data-dismiss="modal">Login Here</a></p>
+                  </div>
                 <div class="form-group">
                   <input type="submit" value="Sign Up" name="signup" id="submit" class="btn btn-block">
                 </div>
@@ -86,9 +95,6 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="modal-footer text-center">
-        <p>Already got an account? <a href="#loginform" data-toggle="modal" data-dismiss="modal">Login Here</a></p>
       </div>
     </div>
   </div>
