@@ -468,9 +468,9 @@
                 return true;
             }
             $exception = '<div class="help-block alert alert-warning">' +
-            '<h4>Invalid Input Type</h4>' +
-            'You must set an input <code>type = file</code> for <b>bootstrap-fileinput</b> plugin to initialize.' +
-            '</div>';
+                '<h4>Invalid Input Type</h4>' +
+                'You must set an input <code>type = file</code> for <b>bootstrap-fileinput</b> plugin to initialize.' +
+                '</div>';
             self.$element.after($exception);
             return false;
         },
@@ -1350,7 +1350,8 @@
         uploadSingle: function (i, files, allFiles) {
             var self = this, total = self.getFileStack().length, formdata = new FormData(), outData,
                 previewId = self.previewInitId + "-" + i, $thumb = $('#' + previewId + ':not(.file-preview-initial)'),
-                pct, chkComplete, $btnUpload = $thumb.find('.kv-file-upload'), $btnDelete = $thumb.find('.kv-file-remove'),
+                pct, chkComplete, $btnUpload = $thumb.find('.kv-file-upload'),
+                $btnDelete = $thumb.find('.kv-file-remove'),
                 updateProgress, hasPostData = self.filestack.length > 0 || !$.isEmptyObject(self.uploadExtraData),
                 resetActions, fnBefore, fnSuccess, fnComplete, fnError, params = {id: previewId, index: i};
             self.formdata = formdata;
@@ -1984,7 +1985,7 @@
                     self.resetPreviewThumbs(isAjaxUpload);
                 }
             } else {
-                 if (!isAjaxUpload || flagSingle) {
+                if (!isAjaxUpload || flagSingle) {
                     self.resetPreviewThumbs(false);
                     if (flagSingle) {
                         self.filestack = [];
@@ -2062,7 +2063,7 @@
             if (isError) {
                 title = $('<div>' + self.msgValidationError + '</div>').text();
                 out = '<span class="' + self.msgValidationErrorClass + '">' +
-                self.msgValidationErrorIcon + title + '</span>';
+                    self.msgValidationErrorIcon + title + '</span>';
             } else {
                 if (isEmpty(content) || self.$caption.length === 0) {
                     return;
@@ -2134,7 +2135,8 @@
             return '<button type="button" title="' + self.cancelTitle + '" class="hide ' + css + '">' + self.cancelIcon + self.cancelLabel + '</button>';
         },
         renderUpload: function () {
-            var self = this, css = self.uploadClass + ' kv-fileinput-upload fileinput-upload-button', content = '', status = '';
+            var self = this, css = self.uploadClass + ' kv-fileinput-upload fileinput-upload-button', content = '',
+                status = '';
             if (!self.showUpload) {
                 return '';
             }
