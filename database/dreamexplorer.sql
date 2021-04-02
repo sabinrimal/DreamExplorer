@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 28, 2021 at 11:05 AM
+-- Generation Time: Apr 02, 2021 at 05:02 AM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 7.4.16
 
@@ -97,7 +97,7 @@ CREATE TABLE `tblcontactusinfo` (
   `id` int(11) NOT NULL,
   `Address` tinytext DEFAULT NULL,
   `EmailId` varchar(255) DEFAULT NULL,
-  `ContactNo` char(11) DEFAULT NULL
+  `ContactNo` char(15) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -105,7 +105,7 @@ CREATE TABLE `tblcontactusinfo` (
 --
 
 INSERT INTO `tblcontactusinfo` (`id`, `Address`, `EmailId`, `ContactNo`) VALUES
-(1, 'Mitrapark, Chabahil, Kathmandu, Nepal																									', 'contact@dreamexplorer.com.np', '+9779804975');
+(1, 'Mitrapark, Chabahil, Kathmandu, Nepal																									', 'contact@dreamexplorer.com.np', '+9779804975875');
 
 -- --------------------------------------------------------
 
@@ -259,8 +259,8 @@ CREATE TABLE `tblvehicles` (
 --
 
 INSERT INTO `tblvehicles` (`id`, `VehiclesTitle`, `VehiclesBrand`, `VehiclesOverview`, `PricePerDay`, `FuelType`, `ModelYear`, `SeatingCapacity`, `Vimage1`, `Vimage2`, `Vimage3`, `Vimage4`, `Vimage5`, `AirConditioner`, `PowerDoorLocks`, `AntiLockBrakingSystem`, `BrakeAssist`, `PowerSteering`, `DriverAirbag`, `PassengerAirbag`, `PowerWindows`, `CDPlayer`, `CentralLocking`, `CrashSensor`, `LeatherSeats`, `RegDate`, `UpdationDate`) VALUES
-(1, 'Swift', 1, 'SWIFT ZXI Full Option', 50, 'Petrol', 2019, 5, 'rent-car.jpg', 'rent-car.jpg', 'rent-car.jpg', 'rent-car.jpg', 'rent-car.jpg', 1, 1, 1, NULL, 1, 1, 1, 1, 1, NULL, NULL, NULL, '2021-03-06 13:43:58', '2021-03-25 01:39:55'),
-(8, 'i10Neo', 10, 'i10Neo Full Option Model', 50, 'Petrol', 2020, 5, 'rent-car.jpg', 'rent-car.jpg', 'rent-car.jpg', 'rent-car.jpg', 'rent-car.jpg', 1, 1, 1, 1, 1, 1, 1, 1, NULL, NULL, NULL, NULL, '2021-03-25 02:00:16', NULL);
+(1, 'Swift', 1, 'SWIFT ZXI Full Option', 5000, 'Petrol', 2019, 5, 'rent-car.jpg', 'rent-car.jpg', 'rent-car.jpg', 'rent-car.jpg', 'rent-car.jpg', 1, 1, 1, NULL, 1, 1, 1, 1, 1, NULL, NULL, NULL, '2021-03-06 13:43:58', '2021-04-01 17:03:59'),
+(8, 'i10Neo', 10, 'i10Neo Full Option Model', 5000, 'Petrol', 2020, 5, 'rent-car.jpg', 'rent-car.jpg', 'rent-car.jpg', 'rent-car.jpg', 'rent-car.jpg', 1, 1, 1, 1, 1, 1, 1, 1, NULL, NULL, NULL, NULL, '2021-03-25 02:00:16', NULL);
 
 --
 -- Indexes for dumped tables
