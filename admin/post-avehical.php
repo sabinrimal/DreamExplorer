@@ -164,13 +164,13 @@ if (strlen($_SESSION['alogin']) == 0) {
                                                         <option value=""> Select</option>
                                                         <?php $ret = "select id,BrandName from tblbrands";
                                                         $query = $dbh->prepare($ret);
-                                                        //$query->bindParam(':id',$id, PDO::PARAM_STR);
                                                         $query->execute();
                                                         $results = $query->fetchAll(PDO::FETCH_OBJ);
                                                         if ($query->rowCount() > 0) {
                                                             foreach ($results as $result) {
                                                                 ?>
-                                                                <option value="<?php echo htmlentities($result->id); ?>"><?php echo htmlentities($result->BrandName); ?></option>
+                                                                <option value="<?php echo htmlentities($result->id); ?>">
+                                                                    <?php echo htmlentities($result->BrandName); ?></option>
                                                             <?php }
                                                         } ?>
 
@@ -189,7 +189,7 @@ if (strlen($_SESSION['alogin']) == 0) {
                                             </div>
 
                                             <div class="form-group">
-                                                <label class="col-sm-2 control-label">Price Per Day(in USD)<span
+                                                <label class="col-sm-2 control-label">Price Per Day(in NPR)<span
                                                             style="color:red">*</span></label>
                                                 <div class="col-sm-4">
                                                     <input type="text" name="priceperday" class="form-control" required>

@@ -112,7 +112,7 @@ error_reporting(0);
                                                 <?php echo htmlentities($result->VehiclesTitle); ?>
                                             </a>
                                         </h6>
-                                        <span class="price">$<?php echo htmlentities($result->PricePerDay); ?> /Day</span>
+                                        <span class="price">रु.<?php echo htmlentities($result->PricePerDay); ?> /Day</span>
                                     </div>
                                     <div class="inventory_info_m">
                                         <p><?php echo substr($result->VehiclesOverview, 0, 70); ?></p>
@@ -180,7 +180,9 @@ error_reporting(0);
             <div id="testimonial-slider">
                 <?php
                 $tid = 1;
-                $sql = "SELECT tbltestimonial.Testimonial,tblusers.FullName from tbltestimonial join tblusers on tbltestimonial.UserEmail=tblusers.EmailId where tbltestimonial.status=:tid";
+                $sql = "SELECT tbltestimonial.Testimonial,tblusers.FullName from tbltestimonial 
+                        join tblusers on tbltestimonial.UserEmail=tblusers.EmailId 
+                        where tbltestimonial.status=:tid";
                 $query = $dbh->prepare($sql);
                 $query->bindParam(':tid', $tid, PDO::PARAM_STR);
                 $query->execute();
@@ -237,5 +239,6 @@ error_reporting(0);
 <!--Slider-JS-->
 <script src="assets/js/slick.min.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
+
 </body>
 </html>

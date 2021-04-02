@@ -283,6 +283,10 @@ blockquote {
     padding: 0px 25px;
 }
 
+.btn.btn-xs:hover {
+    background-color: #64b9fc;
+}
+
 .btn.btn-xs .fa {
     margin: 0 5px;
     font-size: 14px;
@@ -421,10 +425,14 @@ a:hover, a:focus, .btn-link:hover {
     fill: #fb8627;
 }
 
+button.btn.btn-block:hover {
+    background-color: #64b9fc;
+}
+
 .btn:hover, .btn:focus,
 .search_other:hover,
 #other_info:hover {
-    background-color: #fb8627;
+    background-color: #8bbbd3;
     fill: #fb4d59;
 }
 
@@ -1030,7 +1038,8 @@ table thead th, table thead td {
 }
 
 .user_login ul.dropdown-menu {
-    background: #111111 none repeat scroll 0 0;
+    background: #107295 none repeat scroll 0 0;
+    opacity: 0.9;
     border-radius: 0;
     padding: 15px 0;
     top: 107%;
@@ -1041,7 +1050,7 @@ table thead th, table thead td {
 	2.1 Navigation & Dropdown Menu
 ------------------------------------------*/
 #navigation_bar {
-    background: #111111 none repeat scroll 0 0;
+    background: #107295 none repeat scroll 0 0;
     border-radius: 0;
     padding: 0;
 }
@@ -1149,8 +1158,8 @@ nav.navbar {
 
 .user_login .dropdown-menu > .active > a, .user_login .dropdown-menu > .active > a:focus, .user_login .dropdown-menu > .active > a:hover,
 .user_login .dropdown-menu > .active > a:hover, .user_login .dropdown-menu > li > a:focus, .user_login .dropdown-menu > li > a:hover {
-    background: #fff;
-    color: #111;
+    background: #fb8627;
+    color: #FFFFFF;
 }
 
 @media (min-width: 768px) {
@@ -1526,7 +1535,7 @@ nav.navbar {
 	3.5. Fun-Facts
 -----------------------------*/
 .fun-facts-section {
-    background: rgba(0, 0, 0, 0) url("../images/fun-facts-bg.jpg") repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) url("../images/banner-image.jpg") repeat scroll 0 0;
     padding: 100px 0;
     position: relative;
 }
@@ -1763,7 +1772,7 @@ nav.navbar {
 	3.8 Testimonial-Section
 -----------------------------*/
 .testimonial-section {
-    background-image: url("../images/testimonial-bg.jpg");
+    background-image: url("../logo/logo_title.png");
 }
 
 .white-text h2 {
@@ -1801,10 +1810,11 @@ nav.navbar {
     padding: 35px 35px 35px 92px;
     position: relative;
     width: 425px;
+    height: 189px !important;
 }
 
 .testimonial-content::after {
-    background: rgba(0, 0, 0, 0) url("../images/testimonial-content-bg.jpg") repeat scroll 0 0 / cover;
+    background: rgba(0, 0, 0, 0) url("../logo/logo_title.png") repeat scroll 0 0 / cover;
     border-radius: 0 30px;
     content: "";
     height: 100%;
@@ -2093,8 +2103,8 @@ input.newsletter-input {
 }
 
 .footer-bottom {
-    background: #191919 none repeat scroll 0 0;
-    padding: 22px 0;
+    background: #000000 none repeat scroll 0 0;
+    padding: 1px 0;
 }
 
 .footer_widget {
@@ -2162,6 +2172,10 @@ input.newsletter-input {
 
 .back-top a:hover, .back-top a:focus {
     color: #fff;
+}
+
+.back-top a:hover {
+    background-color: #64b9fc;
 }
 
 
@@ -2427,7 +2441,7 @@ form .slider.slider-horizontal {
 }
 
 .facts_section_bg {
-    background: rgba(0, 0, 0, 0) url("../images/facts_bg.jpg") no-repeat scroll 0 0 / cover;
+    background: rgba(0, 0, 0, 0) url("../logo/logo_title.png") no-repeat scroll 0 0 / cover;
     bottom: 0;
     height: 100%;
     left: 0;
@@ -2538,7 +2552,7 @@ form .slider.slider-horizontal {
 	4.8. Help
 ------------------------*/
 #help {
-    background-image: url("../images/help_bg.jpg");
+    background-image: url("../logo/logo_title.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -2816,7 +2830,7 @@ form .slider.slider-horizontal {
     background-attachment: scroll;
     background-clip: border-box;
     background-color: rgba(0, 0, 0, 0);
-    background-image: url("../images/img_390x390.jpg") !important;
+    background-image: url("../logo/logo_title.png") !important;
     background-origin: padding-box;
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -3190,7 +3204,7 @@ table.info-tabel tr td {
 
 
 .listing_detail_header {
-    background: rgba(0, 0, 0, 0) url("../images/listing-detail-header-img.jpg") no-repeat fixed center center / cover;
+    background: rgba(0, 0, 0, 0) url("../logo/logo_title.png") no-repeat fixed center center / cover;
     padding: 80px 0;
     position: relative;
 }
@@ -3357,15 +3371,15 @@ table.info-tabel tr td {
 }
 
 .knowledge_base_faq {
-    background: rgba(0, 0, 0, 0) url("../images/knowledge_base_bg.jpg") no-repeat scroll 0 0 / cover;
+    background: rgba(0, 0, 0, 0) url("../logo/logo_title.png") no-repeat scroll 0 0 / cover;
 }
 
 .about_services_faq {
-    background: rgba(0, 0, 0, 0) url("../images/about_services_faq_bg.jpg") no-repeat scroll 0 0 / cover;
+    background: rgba(0, 0, 0, 0) url("../logo/logo_title.png") no-repeat scroll 0 0 / cover;
 }
 
 .support_faq {
-    background: rgba(0, 0, 0, 0) url("../images/support_faq_bg.jpg") no-repeat scroll 0 0 / cover;
+    background: rgba(0, 0, 0, 0) url("../logo/logo_title.png") no-repeat scroll 0 0 / cover;
 }
 
 
@@ -3551,7 +3565,7 @@ table.info-tabel tr td {
 	13. 404-Page
 ===========================*/
 .page_404 {
-    background-image: url(../images/error404-page-header-img.jpg);
+    background-image: url("../logo/logo_title.png");
 }
 
 .error_text_m {
@@ -3619,7 +3633,7 @@ table.info-tabel tr td {
 	14. Our-Services-Page
 ==================================*/
 .services_page {
-    background-image: url(../images/services-page-header-img.jpg);
+    background-image: url("../logo/logo_title.png");
 }
 
 .services_image {
@@ -3670,7 +3684,7 @@ table.info-tabel tr td {
 	15. Our-Blog-Page
 ==============================*/
 .blog_page {
-    background-image: url(../images/blog-page-header-img.jpg);
+    background-image: url("../logo/logo_title.png");
 }
 
 .our_blog {
@@ -4306,7 +4320,7 @@ table.info-tabel tr td {
 }
 
 .upload_more_img:after {
-    background-image: url("../images/addmore_img.png");
+    background-image: url("../images/banner-image.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     content: "";
@@ -4536,7 +4550,7 @@ table.info-tabel tr td {
 	19. Compare-Page
 ================================*/
 .compare_page {
-    background-image: url(../images/compare-page-header-img.jpg);
+    background-image: url("../logo/logo_title.png");
 }
 
 .compare_info table td, .compare_info table th {
@@ -4638,11 +4652,11 @@ table.info-tabel tr td {
     text-align: center;
     top: 50%;
     width: 32px;
-    transform: translateY(-50%)
+    transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
-    -md-transform: translateY(-50%)
+    -md-transform: translateY(-50%);
 }
 
 .td_divider {
@@ -4713,7 +4727,7 @@ table.info-tabel tr td {
 	20. Coming-Soon-Page
 ================================*/
 .coming_soon_bg {
-    background-image: url(../images/coming_soon_bg.jpg);
+    background-image: url("../logo/logo_title.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;

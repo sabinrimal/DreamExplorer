@@ -59,14 +59,15 @@ error_reporting(0);
                 <div class="result-sorting-wrapper">
                     <div class="sorting-count">
                         <?php
-                        //Query for Listing count
+                        //Query for Searching Count
                         $sql = "SELECT tblvehicles.*,tblbrands.BrandName,tblbrands.id as bid  from tblvehicles 
                         join tblbrands on tblbrands.id=tblvehicles.VehiclesBrand 
                         where tblvehicles.VehiclesTitle LIKE :searched 
-                        OR tblvehicles.FuelType LIKE :searched2 ";
+                        OR tblvehicles.FuelType LIKE :searched2 or tblbrands.BrandName LIKE :searched3";
                         $query = $dbh->prepare($sql);
                         $query->bindValue(':searched', '%' . $searched . '%');
                         $query->bindValue(':searched2', '%' . $searched . '%');
+                        $query->bindValue(':searched3', '%' . $searched . '%');
                         $query->execute();
                         $cnt = $query->rowCount();
                         ?>
@@ -77,10 +78,11 @@ error_reporting(0);
                 $sql = "SELECT tblvehicles.*,tblbrands.BrandName,tblbrands.id as bid  from tblvehicles 
                         join tblbrands on tblbrands.id=tblvehicles.VehiclesBrand 
                         where tblvehicles.VehiclesTitle LIKE :searched 
-                        OR tblvehicles.FuelType LIKE :searched2 ";
+                        OR tblvehicles.FuelType LIKE :searched2 or tblbrands.BrandName LIKE :searched3";
                 $query = $dbh->prepare($sql);
                 $query->bindValue(':searched', '%' . $searched . '%');
                 $query->bindValue(':searched2', '%' . $searched . '%');
+                $query->bindValue(':searched3', '%' . $searched . '%');
                 $query->execute();
                 $results = $query->fetchAll(PDO::FETCH_OBJ);
                 $cnt = 1;
@@ -101,7 +103,7 @@ error_reporting(0);
                                         <?php echo htmlentities($result->VehiclesTitle); ?>
                                     </a>
                                 </h5>
-                                <p class="list-price">$<?php echo htmlentities($result->PricePerDay); ?> Per Day</p>
+                                <p class="list-price">रु.<?php echo htmlentities($result->PricePerDay); ?> Per Day</p>
                                 <ul>
                                     <li>
                                         <i class="fa fa-user"
@@ -193,7 +195,7 @@ error_reporting(0);
                                         <div class="recent_post_title">
                                             <a href="vehical-details.php?vhid=<?php echo htmlentities($result->id); ?>"><?php echo htmlentities($result->BrandName); ?>
                                                 , <?php echo htmlentities($result->VehiclesTitle); ?></a>
-                                            <p class="widget_price">$<?php echo htmlentities($result->PricePerDay); ?>
+                                            <p class="widget_price">रु.<?php echo htmlentities($result->PricePerDay); ?>
                                                 Per Day</p>
                                         </div>
                                     </li>

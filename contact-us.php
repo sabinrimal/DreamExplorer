@@ -128,7 +128,8 @@ if (isset($_POST['send'])) {
                     </form>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
                 <h3>Contact Info</h3>
                 <div class="contact_detail">
                     <?php

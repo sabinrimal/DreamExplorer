@@ -8,12 +8,14 @@ if (isset($_POST['login'])) {
     $query->bindParam(':password', $password, PDO::PARAM_STR);
     $query->execute();
     $results = $query->fetchAll(PDO::FETCH_OBJ);
+    $email = $_COOKIE["email"];
     if ($query->rowCount() > 0) {
         $_SESSION['login'] = $_POST['email'];
         $_SESSION['fname'] = $results->FullName;
         $currentpage = $_SERVER['REQUEST_URI'];
         echo "<script type='text/javascript'> document.location = '$currentpage'; </script>";
-    } else {
+    }
+    else {
         echo "<script>alert('Invalid Details');</script>";
     }
 }
@@ -43,7 +45,7 @@ if (isset($_POST['login'])) {
                                     <input type="checkbox" id="remember">
                                 </div>
                                 <div class="form-group">
-                                    <input type="submit" name="login" value="Login" class="btn btn-block">
+                                    <input type="submit" name="login" value="Login" class="btn btn-block" onclick="myFunction()">
                                 </div>
                             </form>
                         </div>
@@ -58,3 +60,9 @@ if (isset($_POST['login'])) {
         </div>
     </div>
 </div>
+
+<script>
+    function myFunction() {
+        alert("Note* Invalid License or Citizenship will lead to booking rejection.");
+    }
+</script>

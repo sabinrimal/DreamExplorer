@@ -35,9 +35,6 @@ if (isset($_POST['emailsubscibe'])) {
                             <a href="page.php?type=aboutus">About Us</a>
                         </li>
                         <li>
-                            <a href="page.php?type=faqs">FAQs</a>
-                        </li>
-                        <li>
                             <a href="page.php?type=privacy">Privacy</a>
                         </li>
                         <li>
@@ -75,13 +72,13 @@ if (isset($_POST['emailsubscibe'])) {
                         <p>Connect with Us:</p>
                         <ul>
                             <li>
-                                <a href="#">
+                                <a href="https://www.facebook.com/rimal.sabin/">
                                     <i class="fa fa-facebook-square" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
-                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <a href="https://www.linkedin.com/in/sabin-rimal-5a24491a2/">
+                                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                                 </a>
                             </li>
                         </ul>

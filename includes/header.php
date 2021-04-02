@@ -1,3 +1,4 @@
+
 <header>
     <div class="default-header">
         <div class="container">
@@ -19,7 +20,7 @@
                             <div class="circle_icon">
                                 <i class="fa fa-phone" aria-hidden="true"></i>
                             </div>
-                            <p class="uppercase_text">Service Helpline Call Us </p>
+                            <p class="uppercase_text">Service Helpline</p>
                             <a href="tel:61-1234-5678-09">+977-9804975875</a>
                         </div>
                         <div class="social-follow">
@@ -138,11 +139,18 @@
                     <li><a href="index.php">Home</a></li>
                     <li><a href="page.php?type=aboutus">About Us</a></li>
                     <li><a href="car-listing.php">Car Listing</a>
-                        <!--          <li><a href="page.php?type=faqs">FAQs</a></li>-->
                     <li><a href="contact-us.php">Contact Us</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- Navigation end -->
+
+    <!-- Timeout After 20 Minutes -->
+    <script>
+        console.log('hello');
+        setTimeout(function(){ window.location.href = "logout.php";
+        }, 1200000);
+    </script>
+    <!-- Timeout After 20 Minutes  -->
 </header>
