@@ -229,13 +229,14 @@ blockquote {
 
 .btn {
     border: medium none;
-    border-radius: 3px;
+    border-radius: 1px;
     color: #ffffff;
     font-size: 16px;
     font-weight: 800;
-    line-height: 30px;
+    line-height: 20px;
     margin: auto;
-    padding: 7px 36px;
+    padding: 10px 25px;
+    border-radius: 10px;
     transition: all 0.3s linear 0s;
     -moz-transition: all 0.3s linear 0s;
     -o-transition: all 0.3s linear 0s;
@@ -280,7 +281,7 @@ blockquote {
 
 .btn.btn-xs {
     font-size: 12px;
-    padding: 0px 25px;
+    padding: 10px 20px;
 }
 
 .btn.btn-xs:hover {
@@ -1225,16 +1226,16 @@ nav.navbar {
 }
 
 .banner_content h1 {
-    /*color: #FFFFFF;*/
-    mix-blend-mode: exclusion;
+    color: #FFFFFF;
+    /*mix-blend-mode: exclusion;*/
     font-size: 40px;
     line-height: 50px;
     text-transform: uppercase;
 }
 
 .banner_content p {
-    /*color: #FFFFFF;*/
-    mix-blend-mode: hard-light;
+    color: #FFFFFF;
+    /*mix-blend-mode: hard-light;*/
     font-size: 20px;
     font-weight: 400;
     line-height: 29px;

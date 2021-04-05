@@ -6,7 +6,7 @@ admin
 
 USER LOGIN:
 
-test
+test@gmail.com
 test
 
 sabinrimalwork@gmail.com

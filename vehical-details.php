@@ -37,6 +37,7 @@ if (isset($_POST['submit'])) {
     <meta name="description" content="">
     <title>DreamExplorer | Vehicle Details</title>
     <link href="assets/logo/logo_title.png"/>
+    <link href="../logo/logo_title.png">
     <!--Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
     <!--Custom Style -->
@@ -331,7 +332,7 @@ $_SESSION['brndid'] = $result->bid;
 
         <!--Similar-Cars-->
         <div class="similar_cars">
-            <h3>Similar Cars</h3>
+            <h3>Similar Vehicles</h3>
             <div class="row">
                 <?php
                 $bid = $_SESSION['brndid'];
@@ -343,7 +344,7 @@ $_SESSION['brndid'] = $result->bid;
                 $cnt = 1;
                 if ($query->rowCount() > 0) {
                     foreach ($results as $result) { ?>
-                        <div class="col-md-3 grid_listing">
+                        <div class="col-md-4 grid_listing">
                             <div class="product-listing-m gray-bg">
                                 <div class="product-listing-img"><a
                                             href="vehical-details.php?vhid=<?php echo htmlentities($result->id); ?>"><img
@@ -353,21 +354,24 @@ $_SESSION['brndid'] = $result->bid;
                                 <div class="product-listing-content">
                                     <h5>
                                         <a href="vehical-details.php?vhid=<?php echo htmlentities($result->id); ?>"><?php echo htmlentities($result->BrandName); ?>
-                                            , <?php echo htmlentities($result->VehiclesTitle); ?></a></h5>
-                                    <p class="list-price">रु.<?php echo htmlentities($result->PricePerDay); ?></p>
+                                            , <?php echo htmlentities($result->VehiclesTitle); ?></a>
+                                        <p class="list-price" style="float: right">रु.<?php echo htmlentities($result->PricePerDay); ?></p>
+                                    </h5>
 
                                     <ul class="features_list">
-
-                                        <li><i class="fa fa-user"
-                                               aria-hidden="true"></i><?php echo htmlentities($result->SeatingCapacity); ?>
-                                            seats
+                                        <li>
+                                            <i class="fa fa-user" aria-hidden="true"></i>
+                                            <?php echo htmlentities($result->SeatingCapacity); ?>
+                                            Seats
                                         </li>
-                                        <li><i class="fa fa-calendar"
-                                               aria-hidden="true"></i><?php echo htmlentities($result->ModelYear); ?>
-                                            model
+                                        <li>
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            <?php echo htmlentities($result->ModelYear); ?>
+                                            Model
                                         </li>
-                                        <li><i class="fa fa-car"
-                                               aria-hidden="true"></i><?php echo htmlentities($result->FuelType); ?>
+                                        <li>
+                                            <i class="fa fa-car" aria-hidden="true"></i>
+                                            <?php echo htmlentities($result->FuelType); ?>
                                         </li>
                                     </ul>
                                 </div>

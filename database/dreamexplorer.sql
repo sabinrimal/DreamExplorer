@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 05, 2021 at 08:09 AM
+-- Generation Time: Apr 05, 2021 at 11:02 AM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 7.4.16
 
@@ -86,7 +86,8 @@ CREATE TABLE `tblbrands` (
 INSERT INTO `tblbrands` (`id`, `BrandName`, `CreationDate`, `UpdationDate`) VALUES
 (1, 'Suzuki', '2021-03-06 13:39:36', '2021-03-06 13:39:55'),
 (10, 'Hyundai', '2021-03-25 01:58:38', NULL),
-(11, 'Volkswagen', '2021-04-02 11:13:09', NULL);
+(11, 'Volkswagen', '2021-04-02 11:13:09', NULL),
+(12, 'Royal Enfield', '2021-04-05 08:07:52', NULL);
 
 -- --------------------------------------------------------
 
@@ -149,9 +150,9 @@ CREATE TABLE `tblpages` (
 --
 
 INSERT INTO `tblpages` (`id`, `PageName`, `type`, `detail`) VALUES
-(1, 'Terms and Conditions', 'terms', '<P align=justify><FONT size=2><STRONG><FONT color=#990000>(1) ACCEPTANCE OF TERMS</FONT><BR><BR></STRONG>Welcome to Yahoo! India. 1Yahoo Web Services India Private Limited Yahoo\", \"we\" or \"us\" as the case may be) provides the Service (defined below) to you, subject to the following Terms of Service (\"TOS\"), which may be updated by us from time to time without notice to you. You can review the most current version of the TOS at any time at: <A href=\"http://in.docs.yahoo.com/info/terms/\">http://in.docs.yahoo.com/info/terms/</A>. In addition, when using particular Yahoo services or third party services, you and Yahoo shall be subject to any posted guidelines or rules applicable to such services which may be posted from time to time. All such guidelines or rules, which maybe subject to change, are hereby incorporated by reference into the TOS. In most cases the guides and rules are specific to a particular part of the Service and will assist you in applying the TOS to that part, but to the extent of any inconsistency between the TOS and any guide or rule, the TOS will prevail. We may also offer other services from time to time that are governed by different Terms of Services, in which case the TOS do not apply to such other services if and to the extent expressly excluded by such different Terms of Services. Yahoo also may offer other services from time to time that are governed by different Terms of Services. These TOS do not apply to such other services that are governed by different Terms of Service. </FONT></P>\r\n<P align=justify><FONT size=2>Welcome to Yahoo! India. Yahoo Web Services India Private Limited Yahoo\", \"we\" or \"us\" as the case may be) provides the Service (defined below) to you, subject to the following Terms of Service (\"TOS\"), which may be updated by us from time to time without notice to you. You can review the most current version of the TOS at any time at: </FONT><A href=\"http://in.docs.yahoo.com/info/terms/\"><FONT size=2>http://in.docs.yahoo.com/info/terms/</FONT></A><FONT size=2>. In addition, when using particular Yahoo services or third party services, you and Yahoo shall be subject to any posted guidelines or rules applicable to such services which may be posted from time to time. All such guidelines or rules, which maybe subject to change, are hereby incorporated by reference into the TOS. In most cases the guides and rules are specific to a particular part of the Service and will assist you in applying the TOS to that part, but to the extent of any inconsistency between the TOS and any guide or rule, the TOS will prevail. We may also offer other services from time to time that are governed by different Terms of Services, in which case the TOS do not apply to such other services if and to the extent expressly excluded by such different Terms of Services. Yahoo also may offer other services from time to time that are governed by different Terms of Services. These TOS do not apply to such other services that are governed by different Terms of Service. </FONT></P>\r\n<P align=justify><FONT size=2>Welcome to Yahoo! India. Yahoo Web Services India Private Limited Yahoo\", \"we\" or \"us\" as the case may be) provides the Service (defined below) to you, subject to the following Terms of Service (\"TOS\"), which may be updated by us from time to time without notice to you. You can review the most current version of the TOS at any time at: </FONT><A href=\"http://in.docs.yahoo.com/info/terms/\"><FONT size=2>http://in.docs.yahoo.com/info/terms/</FONT></A><FONT size=2>. In addition, when using particular Yahoo services or third party services, you and Yahoo shall be subject to any posted guidelines or rules applicable to such services which may be posted from time to time. All such guidelines or rules, which maybe subject to change, are hereby incorporated by reference into the TOS. In most cases the guides and rules are specific to a particular part of the Service and will assist you in applying the TOS to that part, but to the extent of any inconsistency between the TOS and any guide or rule, the TOS will prevail. We may also offer other services from time to time that are governed by different Terms of Services, in which case the TOS do not apply to such other services if and to the extent expressly excluded by such different Terms of Services. Yahoo also may offer other services from time to time that are governed by different Terms of Services. These TOS do not apply to such other services that are governed by different Terms of Service. </FONT></P>'),
-(2, 'Privacy Policy', 'privacy', '<span style=\"color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px; text-align: justify;\">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat</span>'),
-(3, 'About Us ', 'aboutus', '<span style=\"color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, Arial, sans-serif; text-align: justify;\">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat</span>');
+(1, 'Terms and Conditions', 'terms', '<P align=justify><FONT size=2><STRONG><FONT color=#990000>Welcome to DreamExplorer! Nepal.</FONT><BR><BR></STRONG></FONT></P>\r\n'),
+(2, 'Privacy Policy', 'privacy', '<span style=\"color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px; text-align: justify;\">DreamExplorer</span>'),
+(3, 'About Us ', 'aboutus', '<span style=\"color: rgb(0, 0, 0); font-family: &quot;Open Sans&quot;, Arial, sans-serif; text-align: justify;\">DreamExplorer</span>');
 
 -- --------------------------------------------------------
 
@@ -222,7 +223,7 @@ CREATE TABLE `tblusers` (
 --
 
 INSERT INTO `tblusers` (`id`, `FullName`, `EmailId`, `Password`, `ContactNo`, `Citizenship`, `License`, `dob`, `Address`, `City`, `Country`, `RegDate`, `UpdationDate`) VALUES
-(1, 'User Test', 'test', '098f6bcd4621d373cade4e832627b4f6', '9804975875', '0', '0', '17/11/2000', 'Mitrapark', 'Kathmandu', 'Nepal', '2021-03-06 01:32:00', '2021-04-05 06:08:15'),
+(1, 'User Test', 'test@gmail.com', '098f6bcd4621d373cade4e832627b4f6', '9804975875', '0', '0', '17/11/2000', 'Mitrapark', 'Kathmandu', 'Nepal', '2021-03-06 01:32:00', '2021-04-05 06:11:02'),
 (7, 'Sabin Rimal', 'sabinrimalwork@gmail.com', '35b43fb207839298114df0a9224254f0', '9804975875', '04-02-73-00000', '04-06-00000000', NULL, NULL, NULL, NULL, '2021-03-17 03:06:06', NULL);
 
 -- --------------------------------------------------------
@@ -266,9 +267,10 @@ CREATE TABLE `tblvehicles` (
 --
 
 INSERT INTO `tblvehicles` (`id`, `VehiclesTitle`, `VehiclesBrand`, `VehiclesOverview`, `PricePerDay`, `FuelType`, `ModelYear`, `SeatingCapacity`, `Vimage1`, `Vimage2`, `Vimage3`, `Vimage4`, `Vimage5`, `AirConditioner`, `PowerDoorLocks`, `AntiLockBrakingSystem`, `BrakeAssist`, `PowerSteering`, `DriverAirbag`, `PassengerAirbag`, `PowerWindows`, `CDPlayer`, `CentralLocking`, `CrashSensor`, `LeatherSeats`, `RegDate`, `UpdationDate`) VALUES
-(1, 'Swift', 1, 'SWIFT ZXI Full Option', 5000, 'Petrol', 2019, 5, 'banner-image.jpg', 'rent-car.jpg', 'rent-car.jpg', 'rent-car.jpg', 'rent-car.jpg', 1, 1, 1, NULL, 1, 1, 1, 1, 1, NULL, NULL, NULL, '2021-03-06 13:43:58', '2021-04-04 02:10:16'),
-(8, 'i10Neo', 10, 'i10Neo Full Option Model', 5000, 'Petrol', 2020, 5, 'banner-image.jpg', 'rent-car.jpg', 'rent-car.jpg', 'rent-car.jpg', 'rent-car.jpg', 1, 1, 1, 1, 1, 1, 1, 1, NULL, NULL, NULL, NULL, '2021-03-25 02:00:16', '2021-04-04 02:09:26'),
-(9, 'VW Polo', 11, 'VW Polo Full Option Model', 5500, 'Petrol', 2020, 5, 'banner-image.jpg', 'rent-car.jpg', 'rent-car.jpg', 'rent-car.jpg', 'rent-car.jpg', 1, 1, 1, 1, 1, 1, 1, 1, NULL, NULL, 1, 1, '2021-04-02 11:14:52', '2021-04-04 02:06:03');
+(1, 'Swift', 1, 'SWIFT ZXI Full Option', 5000, 'Petrol', 2019, 5, 'car_img.png', 'car_rent.jpg', 'car_rent.jpg', 'car_rent.jpg', 'car_rent.jpg', 1, 1, 1, NULL, 1, 1, 1, 1, 1, NULL, NULL, NULL, '2021-03-06 13:43:58', '2021-04-05 08:44:10'),
+(8, 'i10Neo', 10, 'i10Neo Full Option Model', 5000, 'Petrol', 2020, 5, 'car_img.png', 'car_rent.jpg', 'car_rent.jpg', 'car_rent.jpg', 'car_rent.jpg', 1, 1, 1, 1, 1, 1, 1, 1, NULL, NULL, NULL, NULL, '2021-03-25 02:00:16', '2021-04-05 08:45:14'),
+(9, 'VW Polo', 11, 'VW Polo Full Option Model', 5500, 'Petrol', 2020, 5, 'car_img.png', 'car_rent.jpg', 'car_rent.jpg', 'car_rent.jpg', 'car_rent.jpg', 1, 1, 1, 1, 1, 1, 1, 1, NULL, NULL, 1, 1, '2021-04-02 11:14:52', '2021-04-05 08:46:18'),
+(10, 'RE Himalaya', 12, 'Royal Enfield Himalaya 411cc', 3000, 'Petrol', 2020, 2, 'bike_img.jpg', 'motorbikebike_rent.jpg', 'motorbikebike_rent.jpg', 'motorbikebike_rent.jpg', 'motorbikebike_rent.jpg', NULL, NULL, 1, 1, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, '2021-04-05 08:12:57', NULL);
 
 --
 -- Indexes for dumped tables
@@ -354,7 +356,7 @@ ALTER TABLE `tblbooking`
 -- AUTO_INCREMENT for table `tblbrands`
 --
 ALTER TABLE `tblbrands`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `tblcontactusinfo`
@@ -396,7 +398,7 @@ ALTER TABLE `tblusers`
 -- AUTO_INCREMENT for table `tblvehicles`
 --
 ALTER TABLE `tblvehicles`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

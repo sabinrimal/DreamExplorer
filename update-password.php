@@ -9,7 +9,7 @@ if (strlen($_SESSION['login']) == 0) {
         $password = md5($_POST['password']);
         $newpassword = md5($_POST['newpassword']);
         $email = $_SESSION['login'];
-        $sql = "SELECT Password FROM tblusers WHERE EmailId=:email and Password=:password";
+        $sql = "SELECT Password FROM tblusers WHERE EmailId=:email or Password=:password";
         $query = $dbh->prepare($sql);
         $query->bindParam(':email', $email, PDO::PARAM_STR);
         $query->bindParam(':password', $password, PDO::PARAM_STR);
@@ -21,7 +21,7 @@ if (strlen($_SESSION['login']) == 0) {
             $chngpwd1->bindParam(':email', $email, PDO::PARAM_STR);
             $chngpwd1->bindParam(':newpassword', $newpassword, PDO::PARAM_STR);
             $chngpwd1->execute();
-            $msg = "Your Password succesfully changed";
+            $msg = "Your Password successfully changed";
         } else {
             $error = "Your current password is wrong";
         }

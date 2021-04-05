@@ -38,9 +38,9 @@ error_reporting(0);
             <div class="row">
                 <div class="col-md-5 col-md-push-7">
                     <div class="banner_content">
-                        <h1>Find the right car for you.</h1>
+                        <h1>Find the right vehicle for you.</h1>
                         <p>We have more than a thousand cars for you to choose. </p>
-                        <a href="car-listing.php" class="btn">Read More
+                        <a href="car-listing.php" class="btn">View All
                             <span class="angle_arrow">
                                 <i class="fa fa-angle-right" aria-hidden="true"></i>
                             </span>
@@ -53,25 +53,22 @@ error_reporting(0);
 </section>
 <!-- /Banners -->
 
-<!-- Recent Cars-->
+<!-- Recent Vehicles-->
 <section class="section-padding gray-bg">
     <div class="container">
         <div class="section-header text-center">
-            <h2>Find the Best <span>CarForYou</span></h2>
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-                in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-                are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden
-                in the middle of text.</p>
+            <h2>Find the Best <span>VehicleForYou</span></h2>
+            <p>DreamExplorer</p>
         </div>
         <div class="row">
             <!-- Nav tabs -->
             <div class="recent-tab">
                 <ul class="nav nav-tabs" role="tablist">
                     <li role="presentation" class="active"><a href="#resentnewcar" role="tab" data-toggle="tab">New
-                            Car</a></li>
+                            Vehicles</a></li>
                 </ul>
             </div>
-            <!-- Recently Listed New Cars -->
+            <!-- Recently Listed New Vehicles -->
             <div class="tab-content">
                 <div role="tabpanel" class="tab-pane active" id="resentnewcar">
                     <?php
@@ -125,7 +122,7 @@ error_reporting(0);
             </div>
         </div>
 </section>
-<!-- /Resent Cars -->
+<!-- /Resent Vehicles -->
 
 <!-- Fun Facts-->
 <section class="fun-facts-section">

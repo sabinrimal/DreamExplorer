@@ -199,10 +199,8 @@ if (strlen($_SESSION['alogin']) == 0) {
                                                 <div class="col-sm-4">
                                                     <select class="selectpicker" name="fueltype" required>
                                                         <option value=""> Select</option>
-
                                                         <option value="Petrol">Petrol</option>
                                                         <option value="Diesel">Diesel</option>
-                                                        <option value="CNG">CNG</option>
                                                     </select>
                                                 </div>
                                             </div>

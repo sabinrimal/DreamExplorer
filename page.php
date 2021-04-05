@@ -32,8 +32,11 @@ include('includes/config.php');
 </head>
 
 <body>
+
 <!--Header-->
 <?php include('includes/header.php'); ?>
+<!--Header end-->
+
 <?php
 $pagetype = $_GET['type'];
 $sql = "SELECT type,detail,PageName from tblpages where type=:pagetype";
@@ -45,7 +48,6 @@ $cnt = 1;
 if ($query->rowCount() > 0)
 {
 foreach ($results
-
          as $result)
 {
 ?>

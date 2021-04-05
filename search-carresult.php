@@ -12,7 +12,7 @@ error_reporting(0);
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <title>DreamExplorer | Car Listing</title>
+    <title>DreamExplorer | Vehicle Listing</title>
     <link rel="shortcut icon" href="assets/logo/logo_title.png">
     <!--Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
@@ -41,7 +41,7 @@ error_reporting(0);
     <div class="container">
         <div class="page-header_wrap">
             <div class="page-heading">
-                <h1>Car Listing</h1>
+                <h1>Vehicle Listing</h1>
             </div>
         </div>
     </div>
@@ -127,7 +127,7 @@ error_reporting(0);
             <aside class="col-md-3 col-md-pull-9">
                 <div class="sidebar_widget">
                     <div class="widget_heading">
-                        <h5><i class="fa fa-filter" aria-hidden="true"></i> Find Your Car </h5>
+                        <h5><i class="fa fa-filter" aria-hidden="true"></i> Find Your Vehicle </h5>
                     </div>
                     <div class="sidebar_filter">
                         <form action="car-listing.php" method="get">
@@ -152,12 +152,11 @@ error_reporting(0);
                                     <option !important>Select Fuel Type</option>
                                     <option value="Petrol">Petrol</option>
                                     <option value="Diesel">Diesel</option>
-                                    <option value="CNG">CNG</option>
                                 </select>
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn btn-block">
-                                    <i class="fa fa-search" aria-hidden="true"></i> Search Car
+                                    <i class="fa fa-search" aria-hidden="true"></i> Search Vehicle
                                 </button>
                             </div>
                         </form>
