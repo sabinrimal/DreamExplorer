@@ -42,8 +42,8 @@ error_reporting(0);
                         <p>We have more than a thousand cars for you to choose. </p>
                         <a href="car-listing.php" class="btn">Read More
                             <span class="angle_arrow">
-                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-                </span>
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </span>
                         </a>
                     </div>
                 </div>

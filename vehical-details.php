@@ -57,10 +57,12 @@ if (isset($_POST['submit'])) {
 <!--Header-->
 <?php include('includes/header.php'); ?>
 <!-- /Header -->
+
 <!--Listing-Image-Slider-->
 <?php
 $vhid = intval($_GET['vhid']);
-$sql = "SELECT tblvehicles.*,tblbrands.BrandName,tblbrands.id as bid  from tblvehicles join tblbrands on tblbrands.id=tblvehicles.VehiclesBrand where tblvehicles.id=:vhid";
+$sql = "SELECT tblvehicles.*,tblbrands.BrandName,tblbrands.id as bid  from tblvehicles 
+    join tblbrands on tblbrands.id=tblvehicles.VehiclesBrand where tblvehicles.id=:vhid";
 $query = $dbh->prepare($sql);
 $query->bindParam(':vhid', $vhid, PDO::PARAM_STR);
 $query->execute();
@@ -68,36 +70,33 @@ $results = $query->fetchAll(PDO::FETCH_OBJ);
 $cnt = 1;
 if ($query->rowCount() > 0){
 foreach ($results
-
          as $result){
 $_SESSION['brndid'] = $result->bid;
 ?>
     <section id="listing_img_slider">
         <div>
             <img src="admin/img/vehicleimages/<?php echo htmlentities($result->Vimage1); ?>" class="img-responsive"
-                 alt="image" width="900" height="560">
+                 alt="image" style="min-width: 98%; min-height: 300px; display: block; margin-left: auto; margin-right: auto; width: 50%;!important;">
         </div>
         <div>
             <img src="admin/img/vehicleimages/<?php echo htmlentities($result->Vimage2); ?>" class="img-responsive"
-                 alt="image" width="900" height="560">
+                 alt="image" style="min-width: 98%; min-height: 300px; display: block; margin-left: auto; margin-right: auto; width: 50%; !important;">
         </div>
         <div>
             <img src="admin/img/vehicleimages/<?php echo htmlentities($result->Vimage3); ?>" class="img-responsive"
-                 alt="image" width="900" height="560">
+                 alt="image" style="min-width: 98%; min-height: 300px; display: block; margin-left: auto; margin-right: auto; width: 50%; !important;">
         </div>
         <div>
             <img src="admin/img/vehicleimages/<?php echo htmlentities($result->Vimage4); ?>" class="img-responsive"
-                 alt="image" width="900" height="560">
+                 alt="image" style="min-width: 98%; min-height: 300px; display: block; margin-left: auto; margin-right: auto; width: 50%; !important;">
         </div>
-        <?php if ($result->Vimage5 == "") {
-        } else { ?>
-            <div>
-                <img src="admin/img/vehicleimages/<?php echo htmlentities($result->Vimage5); ?>" class="img-responsive"
-                     alt="image" width="900" height="560"/>
-            </div>
-        <?php } ?>
+        <div>
+            <img src="admin/img/vehicleimages/<?php echo htmlentities($result->Vimage5); ?>" class="img-responsive"
+                 alt="image" style="min-width: 98%; min-height: 300px; display: block; margin-left: auto; margin-right: auto; width: 50%; !important;">
+        </div>
     </section>
 <!--/Listing-Image-Slider-->
+
 <!--Listing-detail-->
 <section class="listing-detail">
     <div class="container">
@@ -294,13 +293,6 @@ $_SESSION['brndid'] = $result->bid;
 
             <!--Side-Bar-->
             <aside class="col-md-3">
-
-                <div class="share_vehicle">
-                    <p>Share: <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a> <a href="#"><i
-                                    class="fa fa-twitter-square" aria-hidden="true"></i></a> <a href="#"><i
-                                    class="fa fa-linkedin-square" aria-hidden="true"></i></a> <a href="#"><i
-                                    class="fa fa-google-plus-square" aria-hidden="true"></i></a></p>
-                </div>
                 <div class="sidebar_widget">
                     <div class="widget_heading">
                         <h5><i class="fa fa-envelope" aria-hidden="true"></i>Book Now</h5>
@@ -362,7 +354,7 @@ $_SESSION['brndid'] = $result->bid;
                                     <h5>
                                         <a href="vehical-details.php?vhid=<?php echo htmlentities($result->id); ?>"><?php echo htmlentities($result->BrandName); ?>
                                             , <?php echo htmlentities($result->VehiclesTitle); ?></a></h5>
-                                    <p class="list-price">$<?php echo htmlentities($result->PricePerDay); ?></p>
+                                    <p class="list-price">रु.<?php echo htmlentities($result->PricePerDay); ?></p>
 
                                     <ul class="features_list">
 

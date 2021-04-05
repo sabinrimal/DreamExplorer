@@ -101,7 +101,7 @@ if (isset($_POST['send'])) {
                 <?php if ($error) { ?>
                     <div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?>
                     </div><?php } else if ($msg) { ?>
-                    <div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php } ?>
+                    <div class="succWrap"><strong>SUCCESS</strong>:&nbsp<?php echo htmlentities($msg); ?> </div><?php } ?>
                 <div class="contact_form gray-bg">
                     <form method="post">
                         <div class="form-group">

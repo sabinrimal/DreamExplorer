@@ -1389,8 +1389,13 @@ img {
 
 .carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img, .thumbnail > img {
     display: block;
-    max-width: 100%;
-    height: auto
+    max-width:356px;
+    max-height:186px;
+    width: auto;
+    height: auto;
+    min-width: 356px;
+    min-height: 186px;
+    object-fit: cover;
 }
 
 .img-rounded {
@@ -3886,7 +3891,7 @@ tbody.collapse.in {
 }
 
 .open > .dropdown-menu {
-    display: block
+    display: block;
 }
 
 .open > a {

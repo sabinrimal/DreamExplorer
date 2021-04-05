@@ -63,6 +63,6 @@ if (isset($_POST['login'])) {
 
 <script>
     function myFunction() {
-        alert("Note* Invalid License or Citizenship will lead to booking rejection.");
+        alert("Note* Invalid License ID or Citizenship ID will lead to booking rejection. For security reasons, you will be automatically logged out after 5 minutes.");
     }
 </script>

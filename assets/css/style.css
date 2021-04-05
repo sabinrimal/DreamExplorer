@@ -15,9 +15,9 @@ Version:1.0
 		1.4. Space margins and padding
 		1.5. Form
 		1.6. Table
-		1.7. Section-background-color & sectino-heading
+		1.7. Section-background-color & section-heading
 		1.8 Tabs 
-		1.9. parallex-background
+		1.9. Parallax-Background
 		1.10. Modal
 	
 	2. Header
@@ -1199,12 +1199,14 @@ nav.navbar {
 	3.1. Banner
 -------------------------------*/
 .banner-section {
-    background-image: url("../logo/logo.png");
+    background-image: url("../images/banner_image.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 160px 0;
+    padding: 130px 0;
     position: relative;
+    height: 100%;
+    overflow: hidden;
 }
 
 .banner-section::after {
@@ -1223,14 +1225,16 @@ nav.navbar {
 }
 
 .banner_content h1 {
-    color: #000000;
+    /*color: #FFFFFF;*/
+    mix-blend-mode: exclusion;
     font-size: 40px;
     line-height: 50px;
     text-transform: uppercase;
 }
 
 .banner_content p {
-    color: #000000;
+    /*color: #FFFFFF;*/
+    mix-blend-mode: hard-light;
     font-size: 20px;
     font-weight: 400;
     line-height: 29px;
@@ -3189,12 +3193,12 @@ table.info-tabel tr td {
 
 .owl-buttons div {
     background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
-    border-style: solid;
-    border-width: 2px;
+    border-radius: 100%;
     color: #ffffff;
     display: inline-block;
-    font-size: 14px;
-    padding: 7px;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 5px 12px 5px 12px;
     text-transform: capitalize;
 }
 

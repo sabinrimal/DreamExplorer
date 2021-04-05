@@ -7,6 +7,7 @@ if (strlen($_SESSION['login']) == 0) {
 } else {
     if (isset($_POST['updateprofile'])) {
         $name = $_POST['fullname'];
+        $password = $_POST['password'];
         $mobileno = $_POST['mobilenumber'];
         $dob = $_POST['dob'];
         $adress = $_POST['address'];
@@ -153,6 +154,14 @@ if (strlen($_SESSION['login']) == 0) {
                                            value="<?php echo htmlentities($result->FullName); ?>" id="fullname"
                                            type="text" required>
                                 </div>
+<!--                                //Test For Password Extraction-->
+                                <!--<div class="form-group">
+                                    <label class="control-label">Password</label>
+                                    <input class="form-control white_bg" name="fullname"
+                                           value="<?php /*echo htmlentities($result->Password); */?>" id="password"
+                                           type="text" required>
+                                </div>-->
+<!--                                //Test For Password Extraction End-->
                                 <div class="form-group">
                                     <label class="control-label">Email Address</label>
                                     <input class="form-control white_bg"

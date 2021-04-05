@@ -148,9 +148,9 @@
 
     <!-- Timeout After 20 Minutes -->
     <script>
-        console.log('hello');
+        // console.log('hello');
         setTimeout(function(){ window.location.href = "logout.php";
-        }, 1200000);
+        }, 300000);
     </script>
-    <!-- Timeout After 20 Minutes  -->
+    <!-- Timeout After 10 Minutes  -->
 </header>
