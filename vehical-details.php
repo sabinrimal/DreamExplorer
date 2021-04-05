@@ -311,15 +311,17 @@ $_SESSION['brndid'] = $result->bid;
                             <textarea rows="4" class="form-control" name="message" placeholder="Message"
                                       required></textarea>
                         </div>
+                        <p style="margin: 7px 0 3px 0;">* 10% Discount on self pick up.</p>
                         <?php if ($_SESSION['login']) {
                             ?>
                             <div class="form-group">
-                                <input type="submit" class="btn" name="submit" value="Book Now">
+                                <input type="submit" class="btn" name="submit" value="Book Now" style="float: right;">
                             </div>
                         <?php } else { ?>
-                            <a href="#loginform" class="btn btn-xs uppercase" data-toggle="modal" data-dismiss="modal">Login
+                            <div class="form-group">
+                                <a href="#loginform" class="btn btn-xs uppercase" data-toggle="modal" data-dismiss="modal" style="float: right;">Login
                                 For Book</a>
-
+                            </div>
                         <?php } ?>
                     </form>
                 </div>
@@ -372,6 +374,10 @@ $_SESSION['brndid'] = $result->bid;
                                         <li>
                                             <i class="fa fa-car" aria-hidden="true"></i>
                                             <?php echo htmlentities($result->FuelType); ?>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-id-card" aria-hidden="true"></i>
+                                            50+ Satisfied
                                         </li>
                                     </ul>
                                 </div>

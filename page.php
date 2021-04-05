@@ -67,8 +67,8 @@ foreach ($results
     </section>
 <section class="about_us section-padding">
     <div class="container">
-        <div class="section-header text-center">
-            <h2><?php echo htmlentities($result->PageName); ?></h2>
+        <div class="section-header">
+<!--            <h2>--><?php //echo htmlentities($result->PageName); ?><!--</h2>-->
             <p><?php echo $result->detail; ?> </p>
         </div>
         <?php }

@@ -120,7 +120,7 @@ if (isset($_POST['send'])) {
                             <label class="control-label">Message <span>*</span></label>
                             <textarea class="form-control white_bg" name="message" rows="4" required></textarea>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" style="float: right;">
                             <button class="btn" type="submit" name="send" type="submit">Send Message <span
                                         class="angle_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
                             </button>

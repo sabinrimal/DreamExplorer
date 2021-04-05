@@ -29,7 +29,7 @@ if (isset($_POST['emailsubscibe'])) {
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h6>About Us</h6>
+                    <h6>Know DreamExplorer</h6>
                     <ul>
                         <li>
                             <a href="page.php?type=aboutus">About Us</a>

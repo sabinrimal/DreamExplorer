@@ -36,15 +36,25 @@ error_reporting(0);
     <div class="container">
         <div class="div_zindex">
             <div class="row">
-                <div class="col-md-5 col-md-push-7">
+                <div class="col-md-6 col-md-push-0">
                     <div class="banner_content">
-                        <h1>Find the right vehicle for you.</h1>
-                        <p>We have more than a thousand cars for you to choose. </p>
-                        <a href="car-listing.php" class="btn">View All
+                        <h1>Road Trip! <br/>Need a vehicle???</h1>
+                        <p>"Why own? When you can rent."
+                        <br/>
+                        "Join us for vehicle renting"
+                        <br/>
+                        "We have more than a hundreds of vehicles for you to choose from"</p>
+                        <br/>
+                        <a href="car-listing.php" class="btn" style="margin-top: 10px;">View All
                             <span class="angle_arrow">
                                 <i class="fa fa-angle-right" aria-hidden="true"></i>
                             </span>
                         </a>
+                    </div>
+                </div>
+                <div class="col-md-5 col-md-push-4">
+                    <div class="banner_content">
+                        <h2>Safe | Secure | Simple</h2>
                     </div>
                 </div>
             </div>
@@ -58,7 +68,12 @@ error_reporting(0);
     <div class="container">
         <div class="section-header text-center">
             <h2>Find the Best <span>VehicleForYou</span></h2>
-            <p>DreamExplorer</p>
+            <h6>Self Drive Car or Bike Rentals in Nepal</h6>
+            <p>Rent cars for self drive in Nepal. DreamExplorer is the most affordable brand for self drive
+                car rentals in Nepal. You can also rent a bike in Nepal with DreamExplorer.
+                Self drive car rentals and self drive bike rental options are getting extremely
+                popular nowadays. Rent a Swift, Rent a Camper or Rent a Royal Enfield and enjoy
+                the freedom to drive on your own with DreamExplorer.</p>
         </div>
         <div class="row">
             <!-- Nav tabs -->
@@ -140,7 +155,7 @@ error_reporting(0);
                 <div class="fun-facts-m">
                     <div class="cell">
                         <h2><i class="fa fa-car" aria-hidden="true"></i>10+</h2>
-                        <p>New Cars For Rent</p>
+                        <p>New Vehicles For Rent</p>
                     </div>
                 </div>
             </div>

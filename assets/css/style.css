@@ -1204,38 +1204,49 @@ nav.navbar {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 130px 0;
+    padding: 100px 0;
     position: relative;
     height: 100%;
     overflow: hidden;
 }
 
 .banner-section::after {
-    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
-    bottom: 0;
+    background: rgba(0, 0, 0, 0.8) repeat scroll 0 0 / cover;
+    border-radius: 0;
     content: "";
-    height: 7px;
+    height: 100%;
     left: 0;
+    opacity: 0.5;
     position: absolute;
     right: 0;
+    top: 0;
     width: 100%;
 }
 
 .banner_content {
-    padding-left: 120px;
+    padding-right: 120px;
 }
 
 .banner_content h1 {
-    color: #FFFFFF;
+    color: #f0ad4e;
     /*mix-blend-mode: exclusion;*/
-    font-size: 40px;
+    font-size: 35px;
     line-height: 50px;
     text-transform: uppercase;
 }
 
-.banner_content p {
+.banner_content h2 {
     color: #FFFFFF;
-    /*mix-blend-mode: hard-light;*/
+    /*mix-blend-mode: exclusion;*/
+    font-size: 20px;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin-top: 340px;
+}
+
+.banner_content p {
+    color: #f9f2f4;
+    /*mix-blend-mode: exclusion;*/
     font-size: 20px;
     font-weight: 400;
     line-height: 29px;
@@ -2056,7 +2067,7 @@ nav.navbar {
 .footer-top {
     background: #222222 none repeat scroll 0 0;
     color: #9d9d9d;
-    padding: 80px 0;
+    padding: 40px 0 10px 0px;
 }
 
 .footer-top h6 {
@@ -3298,7 +3309,7 @@ table.info-tabel tr td {
 }
 
 .contact_form {
-    padding: 28px;
+    padding: 20px;
 }
 
 .contact_us h3 {
@@ -3991,17 +4002,17 @@ table.info-tabel tr td {
 -------------------------------------*/
 .sidebar_widget {
     border: 1px solid #e6e6e6;
-    margin: 0 auto 40px;
-    padding: 20px 16px 30px;
+    margin: 0 auto 20px;
+    padding: 10px 5px 5px 5px;
     position: relative;
 }
 
 .widget_heading {
-    margin-bottom: 26px;
+    margin-bottom: 10px;
 }
 
 .widget_heading i {
-    margin: 0 5px 0 0;
+    margin: 0 10px 0 0;
 }
 
 .search_btn {
