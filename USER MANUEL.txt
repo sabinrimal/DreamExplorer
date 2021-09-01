@@ -1,5 +1,5 @@
 ADMIN LOGIN:
-dreamexplorer/dream
+dreamexplorer/admin
 
 sabin
 sabin
