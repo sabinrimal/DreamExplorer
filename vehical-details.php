@@ -9,7 +9,8 @@ if (isset($_POST['submit'])) {
     $useremail = $_SESSION['login'];
     $status = 0;
     $vhid = $_GET['vhid'];
-    $sql = "INSERT INTO  tblbooking(userEmail,VehicleId,FromDate,ToDate,message,Status) VALUES(:useremail,:vhid,:fromdate,:todate,:message,:status)";
+    $sql = "INSERT INTO  tblbooking(userEmail,VehicleId,FromDate,ToDate,message,Status) 
+                VALUES(:useremail,:vhid,:fromdate,:todate,:message,:status)";
     $query = $dbh->prepare($sql);
     $query->bindParam(':useremail', $useremail, PDO::PARAM_STR);
     $query->bindParam(':vhid', $vhid, PDO::PARAM_STR);
@@ -20,7 +21,7 @@ if (isset($_POST['submit'])) {
     $query->execute();
     $lastInsertId = $dbh->lastInsertId();
     if ($lastInsertId) {
-        echo "<script>alert('Booking successfull.');</script>";
+        echo "<script>alert('Booking successful.');</script>";
     } else {
         echo "<script>alert('Something went wrong. Please try again');</script>";
     }
@@ -36,8 +37,7 @@ if (isset($_POST['submit'])) {
     <meta name="keywords" content="">
     <meta name="description" content="">
     <title>DreamExplorer | Vehicle Details</title>
-    <link href="assets/logo/logo_title.png"/>
-    <link href="../logo/logo_title.png">
+    <link rel="shortcut icon" href="assets/logo/logo_title.png"/>
     <!--Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
     <!--Custom Style -->

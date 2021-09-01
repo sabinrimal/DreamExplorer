@@ -1,4 +1,3 @@
-
 <header>
     <div class="default-header">
         <div class="container">
@@ -112,7 +111,6 @@
                                             Testimonial</a></li>
                                     <li><a href="#loginform" data-toggle="modal" data-dismiss="modal">My Testimonial</a>
                                     </li>
-                                    <li><a href="#loginform" data-toggle="modal" data-dismiss="modal">Sign Out</a></li>
                                     <?php
                                 }
                                 ?>

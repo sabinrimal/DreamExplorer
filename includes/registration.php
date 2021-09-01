@@ -83,8 +83,7 @@ if (isset($_POST['signup'])) {
                                     <span id="user-availability-status" style="font-size:12px;"></span>
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control" name="password" placeholder="Password"
-                                           required="required">
+                                    <input type="password" class="form-control" name="password" placeholder="Password" required="required">
                                 </div>
                                 <div class="form-group">
                                     <input type="password" class="form-control" name="confirmpassword"

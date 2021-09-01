@@ -1,7 +1,8 @@
 ADMIN LOGIN:
+dreamexplorer/dream
 
-admin
-admin
+sabin
+sabin
 
 
 USER LOGIN:

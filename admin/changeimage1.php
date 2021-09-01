@@ -15,10 +15,8 @@ if (strlen($_SESSION['alogin']) == 0) {
         $query->bindParam(':vimage1', $vimage1, PDO::PARAM_STR);
         $query->bindParam(':id', $id, PDO::PARAM_STR);
         $query->execute();
-
         $msg = "Image updated successfully";
-
-
+        $lastInsertId = $dbh->lastInsertId();
     }
     ?>
 
@@ -60,7 +58,6 @@ if (strlen($_SESSION['alogin']) == 0) {
                 -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
                 box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
             }
-
             .succWrap {
                 padding: 10px;
                 margin: 0 0 20px 0;
@@ -70,8 +67,6 @@ if (strlen($_SESSION['alogin']) == 0) {
                 box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
             }
         </style>
-
-
     </head>
 
     <body>
@@ -92,15 +87,11 @@ if (strlen($_SESSION['alogin']) == 0) {
                                     <div class="panel-heading">Vehicle Image 1 Details</div>
                                     <div class="panel-body">
                                         <form method="post" class="form-horizontal" enctype="multipart/form-data">
-
-
                                             <?php if ($error) { ?>
                                                 <div class="errorWrap"><strong>ERROR</strong>
                                                 :<?php echo htmlentities($error); ?> </div><?php } else if ($msg) { ?>
                                                 <div class="succWrap"><strong>SUCCESS</strong>
                                                 :<?php echo htmlentities($msg); ?> </div><?php } ?>
-
-
                                             <div class="form-group">
                                                 <label class="col-sm-4 control-label">Current Image1</label>
                                                 <?php
@@ -131,12 +122,10 @@ if (strlen($_SESSION['alogin']) == 0) {
                                             </div>
                                             <div class="hr-dashed"></div>
 
-
                                             <div class="form-group">
                                                 <div class="col-sm-8 col-sm-offset-4">
-
-                                                    <button class="btn btn-primary" name="update" type="submit">Update
-                                                    </button>
+                                                    <button class="btn btn-primary" name="update" type="submit">
+                                                        Update</button>
                                                 </div>
                                             </div>
 
@@ -156,6 +145,7 @@ if (strlen($_SESSION['alogin']) == 0) {
             </div>
         </div>
     </div>
+
 
     <!-- Loading Scripts -->
     <script src="js/jquery.min.js"></script>

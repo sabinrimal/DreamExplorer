@@ -136,7 +136,6 @@ if (strlen($_SESSION['login']) == 0) {
             </div>
             <div class="row">
                 <div class="col-md-12 col-sm-12">
-                    <?php include('includes/sidebar.php'); ?>
                     <div class="col-sm-2 col-md-3"></div>
                     <div class="col-md-6 col-sm-8">
                         <div class="profile_wrap">
